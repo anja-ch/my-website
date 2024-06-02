@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anja Hollowell</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .name {
+            font-family: 'Pacifico', cursive;
+            font-size: 5em;
+            color: #333;
+            margin: 0;
+        }
+
+        .title, .link, .secret-link {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .title a, .link a, .secret-link a {
+            text-decoration: none;
+            color: #555;
+            margin-right: 5px;
+            position: relative;
+        }
+
+        .title a::after, .link a::after {
+            content: attr(data-hover);
+            position: absolute;
+            right: -30px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .title a:hover::after, .link a:hover::after {
+            opacity: 1;
+        }
+
+        .link {
+            margin-top: 5px;
+        }
+
+        .secret-link a {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .secret-link a:hover {
+            color: #555;
+            opacity: 1
+        }
+    </style>
+</head>
+<body>
+    <div class="name">Anja Hollowell</div>
+    <div class="title"><a href="https://cbcd.bbk.ac.uk/people/students/anja-hollowell" target="_blank" data-hover="🎓">PhD student, Birkbeck</a></div>
+    <div class="link"><a href="https://scholar.google.com/citations?user=7uXDnCR_f_YC&hl=en&oi=ao" target="_blank" data-hover="✒️">Google Scholar</a></div>
+    <div class="link"><a href="https://twitter.com/AnjaHollowell" target="_blank" data-hover="🐦">Twitter</a></div>
+    <div class="secret-link"><a href="https://www.philadelphiafed.org/-/media/frbp/assets/institutional/education/publications/symbols-on-american-money.pdf" target="_blank">(shh it's secret) Illuminati⚠️👁️‍🗨️</a></div>
+</body>
+</html>
